@@ -1,0 +1,70 @@
+<div id="main">
+    
+    <a id='list' routerLink='/liste'></a>
+
+
+    <div id="haut">
+        <div id="card">
+            <div id='photo'>
+                IMAGE
+            </div>
+
+            <div id="contName">
+                <div class='sContName'>{{carte.firstname}}</div>
+                <div class='sContName'>{{carte.lastname}}</div>
+            </div>
+
+            <div id="contDesc">
+                {{carte.description}}
+            </div>
+
+            <div id="contInfo">
+                <table id='tabInfo'>
+                    <tr>
+                        <td>Email: </td>
+                        <td>{{carte.email}}</td>                        
+                    </tr>
+                    <tr>
+                        <td>Mobile: </td>
+                        <td>{{carte.mobile}}</td>                        
+                    </tr>
+                    <tr>
+                        <td>Fixe: </td>
+                        <td>{{carte.fixe}}</td>                        
+                    </tr>
+                    <tr>
+                        <td>Fax: </td>
+                        <td>{{carte.fax}}</td>                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="bas" (click)='showFile()'>
+
+        <div class="sContBas">
+            <input type="text"  placeholder="Nom..." [(ngModel)]="carte.lastname">
+            <input type="text"  placeholder="Prenom..."[(ngModel)]="carte.firstname">
+            <input type="email" placeholder="Email..." [(ngModel)]="carte.email">
+            <input type="text" placeholder="Mobile..." [(ngModel)]="carte.mobile">
+            <input type="text" placeholder="Fixe..." [(ngModel)]="carte.fixe">
+            <input type="text" placeholder="Fax..." [(ngModel)]="carte.fax">
+        </div>
+
+        <div class="sContBas">
+            <span>Description:</span>
+            <textarea name="" id="" cols="30" rows="10" [(ngModel)]="carte.description"></textarea>
+            <input type="file" [(ngModel)]="file">
+        </div>
+
+        <div class="sContBas">
+            <app-style [name]="'Couleur de fond: '" (stylesChanges)="styles.bgColor=$event" ></app-style>
+            <app-style [name]="'Couleur du texte: '" (stylesChanges)="styles.textColor=$event" ></app-style>
+            <input type="range" min='0' max="50" [(ngModel)]='styles.border'>
+            <app-style [name]="'Couleur de la bordure: '" (stylesChanges)="styles.borderColor=$event" ></app-style>
+        </div>
+        <button (click)="addCarte()">SAVE</button>
+    </div>
+
+
+</div>

@@ -1,0 +1,142 @@
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/atelier.jpg");
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#haut{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+#bas{
+    height: 35%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* background-color: rgba(255, 255, 255, 0.51); */
+    background: white;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#card{
+    width: 56%;
+    height: 90%;
+    background-color: #40FF67;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 0 black;
+}
+
+#list{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 2%;
+    left: 2%;
+    background-image: url("../img/list.png"); 
+}
+
+#photo{
+    position: absolute;
+    height: 35%;
+    width: 18%;
+    top: 6%;
+    left: 5%;
+    border: 4px solid black;
+    border-radius: 5%;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+#contDesc{
+    height: 48%;
+    width: 56%;
+    background-color: red;
+    position: absolute;
+    top: 49%;
+    border-radius: 20px;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 30px;
+    word-break: break-word;
+}
+
+#contInfo{
+    height: 48%;
+    width: 35%;
+    background-color: yellow;
+    position: absolute;
+    top: 49%;
+    border-radius: 20px;
+    right: 61%;
+    display: flex;
+    flex-wrap: 	wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+#tabInfo{
+    height: 78%;
+    font-family: fantasy;
+}
+
+#contName{
+    height: 35%;
+    width: 67%;
+    background-color: black;
+    position: absolute;
+    border-radius: 20px;
+    top: 8%;
+    right: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sContName{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background: white;
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+.sContBas{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
